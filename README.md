@@ -1,4 +1,4 @@
-# agentlog
+# AgentLog
 
 A simple, lightweight Kafka-like messaging system designed for AI agents, using JSONL append-only logs as the storage format.
 
@@ -130,3 +130,28 @@ In this distributed paradigm:
 - **Location Transparency:** Producers and Consumers only need the IP address of the `agentlog` broker. They are agnostic to each other's physical network locations or lifecycles.
 - **Topic-Based Pub/Sub Routing:** Agents subscribe only to the semantic event streams they care about, minimizing unnecessary network chatter.
 - **Resilience via Deterministic Log Replay:** If an Executor node crashes, it can simply reboot and issue a `GET /topics/tasks/replay?offset=X` to seamlessly rehydrate its state and resume processing with exactly-once guarantees.
+
+## Roadmap
+
+- [ ] CLI tooling
+- [ ] Topic retention policies
+- [ ] Event schemas
+- [ ] Topic compaction
+- [ ] Multi-node replication
+- [ ] Agent workflow visualization
+
+## Contributing
+
+Contributions are welcome!
+Feel free to open issues or submit pull requests.
+
+## License
+
+MIT
+
+## Inspiration
+
+Inspired by:
+- Apache Kafka
+- Event sourcing architectures
+- Unix philosophy: simple tools, composable systems
