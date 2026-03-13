@@ -14,6 +14,9 @@ It is lightweight, append-only, and easily inspectable with Unix tools.
 - **Broker**: Broadcasts incoming events via SSE (Server-Sent Events) for real-time streaming.
 - **Replay**: Fetch historical payloads.
 
+## Demo
+https://github.com/user-attachments/assets/01afcb6d-2748-400c-9c74-138a40255d70
+
 ## Usage
 
 ### Server
